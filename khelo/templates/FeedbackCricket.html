@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+</head>
+<body>
+
+<img id="initialImage" src="/media/image{{ exec }}.jpg"/>
+<p id="initFeedback" style="float: right; position: relative; margin-right: 50%">
+    {% for feed in feedback %}
+        ->{{ feed }}<br/>
+    {% endfor %}
+</p>
+</body>
+</html>
